@@ -71,7 +71,7 @@ public class MyBinarySearchTree {
                 System.out.println(temp.getData() + " ");
                 while (q.peek() != null) {
                     if (temp.getLeft() != null)
-
+                        q.add(temp.getLeft());
 
                 }
 

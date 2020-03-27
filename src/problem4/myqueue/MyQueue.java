@@ -55,4 +55,27 @@ public class MyQueue {
     public void setTmp(Node tmp) {
         this.tmp = tmp;
     }
+
+    public void queuePrint(MyQueue queue) {
+        while (queue.tmp != null) {
+            System.out.println(queue.tmp.getNode().getData() + ",");
+            queue.tmp = queue.tmp.getNext();
+        }
+        System.out.println("\b");
+        queue.tmp = queue.front;
+    }
+
+    public void enqueue(Node node) {
+        if (front == null) {
+            tmp = front = end = node;
+        } else {
+            while (tmp.getNext() != null) {
+                tmp = tmp.getNext();
+            }
+            end = node;
+            tmp.setNext(node);
+            tmp = front;
+        }
+    }
+
 }

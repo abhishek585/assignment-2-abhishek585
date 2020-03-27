@@ -63,6 +63,8 @@ public class MyBinarySearchTree {
             return;
 
         q.add(root);
+
+        q.add(null);
     }
 
 }

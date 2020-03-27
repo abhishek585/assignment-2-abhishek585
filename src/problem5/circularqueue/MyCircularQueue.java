@@ -18,40 +18,4 @@ public class MyCircularQueue {
         tmp = null;
     }
 
-    public Node getFront() {
-        return front;
-    }
-
-    public void setFront(Node front) {
-        this.front = front;
-    }
-
-    public Node getTmp() {
-        return tmp;
-    }
-
-    public void setTmp(Node tmp) {
-        this.tmp = tmp;
-    }
-
-    public void enqueue(Node newNode) {
-        if (front == null) {
-            tmp = front = newNode;
-            return;
-        }
-        if (tmp.getNext() == null) {
-            tmp.setNext(newNode);
-            newNode.setNext(tmp);
-            end = newNode;
-            return;
-        }
-        newNode.setNext(tmp.getNext());
-        tmp.setNext(newNode);
-    }
-
-    public void printQueue() {
-        tmp = front;
-
-
-    }
 }

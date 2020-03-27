@@ -88,6 +88,7 @@ public class MyBinarySearchTree {
 
     public void leftView(TreeNode root) {
         q = new LinkedList<TreeNode>();
+        printLeftTree(root);
     }
 
 }

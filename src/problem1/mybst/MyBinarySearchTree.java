@@ -69,6 +69,9 @@ public class MyBinarySearchTree {
             TreeNode temp = q.peek();
             if (temp != null) {
                 System.out.println(temp.getData() + " ");
+                while (q.peek() != null) {
+
+                }
 
             }
         }

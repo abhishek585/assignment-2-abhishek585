@@ -33,4 +33,9 @@ public class MyBinarySearchTree {
         }
     }
 
+    public void countNodeWithoutLeftChild(TreeNode root) {
+        if (root == null)
+            return;
+    }
+
 }

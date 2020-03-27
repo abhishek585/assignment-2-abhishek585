@@ -25,4 +25,21 @@ public class Student {
         System.out.println("appering_count");
         this.apperingcount = sc.nextInt();
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getRollno() {
+        return rollno;
+    }
+
+    public void setRollno(int rollno) {
+        this.rollno = rollno;
+    }
+
 }

@@ -18,6 +18,9 @@ public class MyBinarySearchTree {
         if (root == null)
             return new TreeNode(x);
         else if (x > root.getData())
+            root.setRight(insert(root.getRight(), x));
+        else
+            root.setLeft(insert(root.getLeft(), x));
 
     }
 }

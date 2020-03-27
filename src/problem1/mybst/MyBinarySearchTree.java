@@ -76,10 +76,13 @@ public class MyBinarySearchTree {
                     if (temp.getRight() != null)
                         q.add(temp.getRight());
                     q.remove();
+                    temp = q.peek();
 
                 }
+                q.add(null);
 
             }
+            q.remove();
         }
     }
 

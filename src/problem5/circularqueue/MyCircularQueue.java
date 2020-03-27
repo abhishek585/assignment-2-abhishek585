@@ -61,3 +61,9 @@ public class MyCircularQueue {
         }
 
     }
+
+    public void remove(String name) {
+        tmp = front;
+        if (tmp.getS().)
+    }
+}

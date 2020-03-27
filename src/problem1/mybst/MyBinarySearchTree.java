@@ -73,6 +73,8 @@ public class MyBinarySearchTree {
                     if (temp.getLeft() != null)
                         q.add(temp.getLeft());
 
+                    if (temp.getRight() != null)
+
                 }
 
             }

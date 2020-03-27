@@ -49,6 +49,8 @@ public class MyBinarySearchTree {
             }
             if (temp.getLeft() == null)
                 count++;
+            if (temp.getLeft() != null)
+                queue.add(temp.getLeft());
         }
     }
 

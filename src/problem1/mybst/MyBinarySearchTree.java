@@ -75,6 +75,7 @@ public class MyBinarySearchTree {
 
                     if (temp.getRight() != null)
                         q.add(temp.getRight());
+                    q.remove();
 
                 }
 
